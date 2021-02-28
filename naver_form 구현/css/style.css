@@ -1,0 +1,150 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url("fontello.css");
+body{
+    margin: 0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden, legend{
+    background-color: red;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+  }
+
+.container{
+    width: 768px;
+    text-align: center;
+    margin: 0 auto;    
+}
+.logo{
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 106px; 
+}
+.logo > img{
+    width: 230px;
+    height: 44px;
+}
+.input{
+
+    width: 460px;
+    margin: 0 auto;
+}
+.input fieldset{
+    padding: 0;
+    height: 280px;
+    margin-top: 48px;
+    position: relative;
+    border: 0;
+}
+.login,.pwd{
+    padding: 14px;
+    box-sizing: border-box;
+    color: #999;
+    border: 1px solid rgba(218, 218, 218, 1) ;
+    width: 460px;
+    height: 48px;
+    margin: 4px 0 ;
+    font-size: 14px;
+    padding-left: 3.2px;
+}
+.pwd{
+    margin-bottom: 8px;
+}
+.login{
+    margin-top: 0;
+}
+.error{
+    /* display: none; */
+    text-align: left;
+    height: 18px;
+    line-height: 1.5;
+    color: rgba(255, 20, 20, 1);
+    margin: 0;
+    padding-left: 3px;
+    font-size: 13px;
+}
+.login-btn{
+    width: 460px;
+    height: 56px;
+    margin-top: 8px;
+    border: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(3, 199, 90, 1);
+}
+.login-btn span{
+    display: inline-block;
+    padding: 1px 0;
+}
+
+.login-status,.security{
+    background-color: yellow;
+    position: absolute;
+    top: -99999px;
+}
+
+.infor{
+    width: 460px;
+    height: 30px;
+    position: absolute;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;   
+    line-height: 2;
+}
+.status-label{
+    font-size: 15px;
+    cursor: pointer;
+    color: #333;
+}
+.click-logo{
+    display: inline-block;
+    padding: 0;
+    background: url(images/no-click.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.click-infor{
+    height: 24px;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    position: relative;
+    top: -5px;
+    left: 4px;
+}
+.security-label{
+    font-size: 15px;
+    cursor: pointer;
+    color: #333;
+    width: 80px;
+    text-align: left;
+}
+.login-status[type="checkbox"]:checked + .status-label span{
+    background: url(images/click.svg) no-repeat;
+}
+.security-label > span::after{
+    content: ' OFF';
+    color:#999;
+}
+.security[type="checkbox"]:checked + .security-label span::after{
+    content: ' ON';
+    color: rgba(3, 199, 90, 1);
+}
+@media (max-width: 768px){
+.container{
+    width: auto;
+    }
+.login{
+    width: 290px;
+    }
+}
