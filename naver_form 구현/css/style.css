@@ -17,21 +17,17 @@ legend,
     overflow: hidden;
     clip: rect(0 0 0 0);
     clip-path: polygon(0 0, 0 0, 0 0);
-  }
-
-.container{
-    text-align: center;
-    margin: 0 auto;    
 }
+
 
 /* 헤더 로고 */
 .header{
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 .logo{
     padding: 0;
-    margin: 0 auto;
     margin-top: 106px; 
 }
 .logo > a img{
@@ -130,7 +126,7 @@ legend,
     width: 80px;
     text-align: left;
 }
-.login-status[type="checkbox"]:checked + .status-label span{
+.login-status[type="checkbox"]:checked + .status-label span:first-child{
     background: url(images/click.svg) no-repeat;
 }
 .security-label > span::after{
