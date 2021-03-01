@@ -129,3 +129,32 @@ legend,
     color: rgba(3, 199, 90, 1);
 }
 ```
+6.모바일 버전은 ```@media (max-width: 768px)```을 이용해서 width값을 100%로 지정해 주었고 피그마 화면을 보고 양옆에 padding값을 똑같이 주었다. 로고의 크기를 맞게 변경해주었다
+```css
+/* 모바일 버전 */
+@media (max-width: 768px){
+.container{
+    padding: 0 15px;
+}
+.logo > a img{
+    width: 165px;
+    height: 32px;
+}
+.input{
+width: 100%;
+}
+.login,
+.pwd{
+    width: 100%;
+    }
+.login-btn{
+    width: 100%;
+}
+.infor{
+    width: 100%;
+}
+.security-label{
+    display: none;
+}
+}
+```
