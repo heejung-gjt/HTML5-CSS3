@@ -5,8 +5,11 @@ body{
     font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
 }
 /* 숨김 콘텐츠 */
-.a11y-hidden, legend{
-    background-color: red;
+.a11y-hidden, 
+legend,
+.label,
+.login-status,
+.security{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -17,28 +20,34 @@ body{
   }
 
 .container{
-    width: 768px;
     text-align: center;
     margin: 0 auto;    
+}
+
+/* 헤더 로고 */
+.header{
+    margin: 0;
+    padding: 0;
 }
 .logo{
     padding: 0;
     margin: 0 auto;
     margin-top: 106px; 
 }
-.logo > img{
+.logo > a img{
     width: 230px;
     height: 44px;
 }
-.input{
 
+/* 로그인 폼 */
+.input{
     width: 460px;
     margin: 0 auto;
 }
 .input fieldset{
     padding: 0;
     height: 280px;
-    margin-top: 48px;
+    margin-top: 40px;
     position: relative;
     border: 0;
 }
@@ -51,7 +60,7 @@ body{
     height: 48px;
     margin: 4px 0 ;
     font-size: 14px;
-    padding-left: 3.2px;
+    padding-left: 14px;
 }
 .pwd{
     margin-bottom: 8px;
@@ -60,7 +69,6 @@ body{
     margin-top: 0;
 }
 .error{
-    /* display: none; */
     text-align: left;
     height: 18px;
     line-height: 1.5;
@@ -84,13 +92,6 @@ body{
     display: inline-block;
     padding: 1px 0;
 }
-
-.login-status,.security{
-    background-color: yellow;
-    position: absolute;
-    top: -99999px;
-}
-
 .infor{
     width: 460px;
     height: 30px;
@@ -140,11 +141,30 @@ body{
     content: ' ON';
     color: rgba(3, 199, 90, 1);
 }
+
+/* 모바일 버전 */
 @media (max-width: 768px){
 .container{
-    width: auto;
+    padding: 0 15px;
+}
+.logo > a img{
+    width: 165px;
+    height: 32px;
+}
+.input{
+width: 100%;
+}
+.login,
+.pwd{
+    width: 100%;
     }
-.login{
-    width: 290px;
-    }
+.login-btn{
+    width: 100%;
+}
+.infor{
+    width: 100%;
+}
+.security-label{
+    display: none;
+}
 }
