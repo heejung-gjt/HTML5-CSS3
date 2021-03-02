@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>웹카페-HTML5, CSS3, 웹표준, 웹접근성</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="group group3">
+      <h1>이벤트 컨텐츠 실습</h1>
+      <div class="gradient-box">
+        <!-- 스타일 만을 위한 마크업  -->
+        <section class="event">
+          <h2 class="event-heading">
+            신규
+            <span class="point-color">이벤트</span>
+          </h2>
+          <div id="eventDetail">
+            <span class="drop-shadow">
+              <img src="./images/free_gift.gif" alt="이벤트 경품: 웹표준 핵심 가이드북 2 도서">
+            </span>
+            <p class="event-brief">
+              <em>웹 표준 핵심 가이드북 2 출시!</em> 선착순 500명 한정으로 증정.
+            </p>
+            
+          </div>
+          <div class="btn-event">
+            <!-- 두개의 태그 차이점 알아보기 2번째 방식 권장 , 하지만 1번으로 마크업함 -->
+            <button type="button" class="btn-event-prev">이전 이벤트 보기</button>
+            <button type="button" class="btn-event-next">다음 이벤트 보기</button>
+            <!-- <button type="button" class="btn-event-prev" aria-label="이전 이벤트 보기"></button>
+            <button type="button" class="btn-event-next" aria-label="다음 이벤트 보기"></button> -->
+          </div>
+        </section>
+        <section class="related">
+          <h2 class="related-heading">
+            관련
+          <span class="point-color">사이트</span>
+        </h2>
+        <ul class="related-list">
+          <li><a href="#">패스트 캠퍼스</a></li>
+          <li><a href="#">W3C</a></li>
+          <li><a href="#">웹접근성 연구소</a></li>
+          <li><a href="#">Web Standards</a></li>
+          <li><a href="#">정보화 진흥원</a></li>
+        </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
