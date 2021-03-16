@@ -1,0 +1,119 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(./fontello.css);
+@import url(./normalize.css);
+:root{
+  --primary-color: #ce4827;
+  --secondary-color: #eaac2e;
+  --silver: #aaa;
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden, legend{
+  background-color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+/* 스타일 초기화 */
+.reset-list{
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+html{
+  font-size: 10px;
+}
+body{
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+body *, body *::before, body *::after{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.header, .visual, .main, .slogan, .footer-content{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.group3{
+  margin: 10px;
+  width: 190px;
+}
+h1{
+  font-size: 16px;
+}
+/* 신규이벤트 및 관련 사이트 */
+.gradient-box{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background:#ccc linear-gradient(180deg,#ccc,#eee);
+  padding: 10px;
+  }
+  
+  .point-color{
+    color: var(--primary-color);
+  }
+  .event{
+    position: relative;
+    border-bottom: 1px solid #aaa;
+  }
+  .related{
+    background-color: pink;
+  }
+  .event-heading, .related-heading{
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+  }
+  .drop-shadow{
+    border: 1px solid #aaa;
+    box-shadow: 5px 5px 0 0 #999;
+    display: inline-block;
+  }
+  .evnet img{
+    vertical-align: top;
+  }
+  .event-brief{
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1.5;
+  }
+  .event-brief em{
+    font-style: normal;
+    /* display없애보고 비교한번 하기 */
+    display: block;
+  }
+  .btn-event{
+    height: 18px;
+    /* background-color:skyblue; */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  /*.btn-event button으로 설정하면 구체성에 문제가 발생한다 ! */
+  .btn-event-prev,.btn-event-next{
+    width: 19px;
+    border: 0;
+    /* padding트릭 사용 */
+    padding: 18px 0 0 0;
+    /* 배경 투명하게 적용 */
+    background-color: transparent;
+    /* position: absolute; */
+    /* white-space: nowrap; */
+  /* background-image: url(./images/back_forward.png); */
+  /* background-repeat: no-repeat; */
+  background: url(./images/back_forward.png) no-repeat;
+  }
+  .btn-event-next{
+    background-position: -35px 0;
+  }
+  
