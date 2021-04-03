@@ -20,17 +20,36 @@ body{
     /* background-color: yellow; */
 }
 
-
 .main-title{
     font-size: 5.0em;
     color: dodgerblue;
     letter-spacing: 3px;
     margin-bottom:10px;
+    animation-name: titleAni;
+    animation-duration: 1s;
+    letter-spacing: 5px;
+}
+@keyframes titleAni{
+    0%{
+        opacity: 0; 
+        letter-spacing:-5px;
+    }
+    20%{
+        opacity: 0; 
+        letter-spacing:-5px;
+    }
+    100%{
+        opacity: 1; 
+        letter-spacing:5px;
+    }
 }
 .main-description{
     letter-spacing: 3px;
     margin-bottom: 30px;
     font-size: 1.3em;
+    animation-name: titleAni;
+    animation-duration: 1.6s;
+    letter-spacing: 5px;
 }
 .main-content{
     width: 70%;
@@ -72,6 +91,8 @@ body{
     margin: 0 auto;
     padding: 0 0px 0 110px ;
     /* width: 100%; */
+    animation-name: titleAni;
+    animation-duration: 2.6s;
 }
 .li-item1{
     position: relative;
