@@ -94,7 +94,7 @@ body{
     animation-name: titleAni;
     animation-duration: 2.6s;
 }
-.li-item1{
+.li-item{
     position: relative;
     /* width: 40%; */
     width: 250px;
@@ -149,15 +149,15 @@ body{
 .far:hover{
     font-size: 3.0em;
 }
-.li-item1:hover{
+.li-item:hover{
     transform: scale(1.0);
 }
-.li-item1:hover img{
+.li-item:hover img{
     opacity: 0.3;
 
 }
 
-.li-item1:hover .li-content{
+.li-item:hover .li-content{
     /* background-color: rgba(20, 20, 20, 0.3); */
     background-color: rgba(138, 198, 248, 0.3);
     color: black;
@@ -172,7 +172,7 @@ body{
     margin-bottom: 150px;
     width: 100%;
 }
-.li-item1>img{
+.li-item>img{
     width: 250px;
     height:250px;
     border-radius: 50%;
